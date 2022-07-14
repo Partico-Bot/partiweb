@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/984057692899397640/993190952380399677/PartiBot.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Foxy Community</title>
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <img src="../img/logo.png" class="logo"><h3 class='nome' >PartiBot!</h3></img>                            
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="">STAFF</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+            <img src="../img/moon.png" id="icon">
+        </nav>
+
+        <div class="info">
+            <h1><span>PartiBot</span> Staff!</h1>
+            <p>Developers:</p>
+            <img class="pulsazione" src="https://cdn.discordapp.com/attachments/925155117496414218/978635846020386826/unknown.png"></img>
+        </div>
+       <div class="img-box">
+           <img src="../img/pattern.png" class="back-img">
+           <img src="../img/PartiBot.png" class="main-img">
+       </div>
+      
+       <div class="social-links">
+           <a href="#" id="support"><i class="fab fa-discord"></i></a>
+       </div>
+    </div>
+
+     <script>
+   var icon = document.getElementById("icon");
+
+   icon.onclick = function(){
+       document.body.classList.toggle("dark-theme")
+       if(document.body.classList.contains("dark-theme")){
+           icon.src = "../img/sun.png"
+       }else{
+           icon.src = "../img/moon.png"
+       }
+   }
+
+   var support = document.getElementById("support")
+
+support.onclick = function(){
+ window.open("http://support.partibot.it", "_blank")
+}
+
+var invite = document.getElementById("invite")
+
+invite.onclick = function(){
+ window.open("http://invite.partibot.it", "_blank")
+}
+
+    </script>
+    
+</body>
+</html>
