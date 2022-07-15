@@ -46,6 +46,7 @@
            <img src="./img/pattern.png" class="back-img">
            <img src="./img/PartiBot.png" class="main-img">
        </div>
+       <button id="ciao">pigiami</button>
     </div>
 
     <script>
@@ -70,7 +71,23 @@ var invite = document.getElementById("invite")
 
 invite.onclick = function(){
 window.open("http://invite.partibot.it", "_blank")
+
 }
+
+const ciao = document.getElementById("ciao")
+
+ciao.onclick = function(){
+  fetch('https://discord.com/api/webhooks/997575804617760800/AMtd2OVE9M0KUe9zriirEZL2vWSRXT--UcfauaTagEJOHwavyrzlpf6SKgMVC2STUbCq', {
+  method: 'POST',
+  body: JSON.stringify({
+    content: 'qualcuno a voluto invitare il bot',
+  })
+})
+}
+
+
+
+
 
     </script>
     
